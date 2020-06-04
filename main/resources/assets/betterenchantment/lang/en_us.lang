@@ -1,0 +1,43 @@
+//Items
+item.empty_enchanted_book.name=Empty Enchanted Book
+
+//Blocks
+tile.enchantment_determiner.name=Enchantment Determiner
+
+//Enchantments
+enchantment.Absorption=Absorption
+enchantment.Bad Luck=Bad Luck
+enchantment.Bad Omen=Bad Omen
+enchantment.Blindness=Blindness
+enchantment.Counduit Power=Conduit Power
+enchantment.Dolphins Grace=Dolphins Grace
+enchantment.Fire Resistance=Fire Resistance
+enchantment.Glowing=Glowing
+enchantment.Haste=Haste
+enchantment.Health Boost=Health Boost
+enchantment.Hero of the Village=Hero of the Village
+enchantment.Hunger=Hunger
+enchantment.Instant Damage=Instant Damage
+enchantment.Instant Health=Instant Health
+enchantment.Invisibility=Invisibility
+enchantment.Jump Boost=Jump Boost
+enchantment.Levitation=Levitation
+enchantment.Luck=Luck
+enchantment.Mining Fatigue=Mining Fatigue
+enchantment.Nausea=Nausea
+enchantment.Night Vision=Night Vision
+enchantment.Poison=Poison
+enchantment.Regeneration=Regeneration
+enchantment.Resistance=Resistance
+enchantment.Saturation=Saturation
+enchantment.Slow Falling=Slow Falling
+enchantment.Slowness=Slowness
+enchantment.Speed=Speed
+enchantment.Strength=Strength
+enchantment.Water Breathing=Water Breathing
+enchantment.Weakness=Weakness
+enchantment.Wither=Wither
+
+//GUI
+itemGroup.betterenchantmenttab=Better Enchantment
+container.enchantment_determiner=Enchantment Determiner
