@@ -1,8 +1,10 @@
 # BetterEnchantment 1.12.2 v1.0
 Download the Mod file above or at https://www.curseforge.com/minecraft/mc-mods/betterenchantment/files/2972392
 
-Changelog:
-Added:
+Changelog
+--
+Added
+-
 * Enchantments
   * Absorption
   * Bad Luck
@@ -33,7 +35,11 @@ Added:
   * Wither
 * Items
   * Empty Enchanted Book
-Changed:
+
+Changed
 -
-Deleted:
+Nothing
+
+Deleted
 -
+Nothing
