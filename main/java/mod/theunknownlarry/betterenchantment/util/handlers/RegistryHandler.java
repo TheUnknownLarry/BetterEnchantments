@@ -25,13 +25,6 @@ public class RegistryHandler {
 	}
 	
 	@SubscribeEvent
-	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
-		
-		event.getRegistry().registerAll(BlockInit.BLOCKS.toArray(new Block[0]));
-		
-	}
-	
-	@SubscribeEvent
 	public static void onEnchantmentRegister(RegistryEvent.Register<Enchantment> event) {
 		
 		event.getRegistry().registerAll(EnchantmentInit.ENCHANTMENTS.toArray(new Enchantment[0]));
@@ -46,16 +39,6 @@ public class RegistryHandler {
 			if(item instanceof IHasModel) {
 				
 				((IHasModel)item).registerModels();
-				
-			}
-			
-		}
-		
-		for(Block block : BlockInit.BLOCKS) {
-			
-			if(block instanceof IHasModel) {
-				
-				((IHasModel)block).registerModels();
 				
 			}
 			
