@@ -1,0 +1,14 @@
+[{
+  "modid": "betterenchantment",
+  "name": "Better Enchantment",
+  "description": "A mod to get more and better enchantments for you.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["TheUnknownLarry"],
+  "credits": "Yes :)",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}]
