@@ -75,11 +75,6 @@ public class EnchantmentInit {
 	public static final Enchantment LEVITATION = new EnchantmentLevitation();
 	public static final Enchantment LUCK = new EnchantmentLuck();
 	public static final Enchantment BAD_LUCK = new EnchantmentBadLuck();
-	//public static final Enchantment SLOW_FALLING = new EnchantmentSlowFalling();
-	//public static final Enchantment CONDUIT_POWER = new EnchantmentConduitPower();
-	//public static final Enchantment DOLPHINS_GRACE = new EnchantmentDolphinsGrace();
-	//public static final Enchantment BAD_OMEN = new EnchantmentBadOmen();
-	//public static final Enchantment HERO_OF_THE_VILLAGE = new EnchantmentHeroOfTheVillage();
 	
 	@SubscribeEvent
 	public static void effectFunction(PlayerTickEvent event) {
@@ -100,18 +95,6 @@ public class EnchantmentInit {
 		            	
 		            }
 					
-		            if(entry.getKey().getName().contentEquals("enchantment.Bad Omen")) {
-		            	
-		            	event.player.addPotionEffect(new PotionEffect(Potion.getPotionById(31), 2, entry.getValue()-1, false, false));
-		            	
-		            }
-					
-		            if(entry.getKey().getName().contentEquals("enchantment.Conduit Power")) {
-		            	
-		            	event.player.addPotionEffect(new PotionEffect(Potion.getPotionById(29), 2, entry.getValue()-1, false, false));
-		            	
-		            }
-					
 		            if(entry.getKey().getName().contentEquals("enchantment.Fire Resistance")) {
 		            	
 		            	event.player.addPotionEffect(new PotionEffect(Potion.getPotionById(12), 2, entry.getValue()-1, false, false));
@@ -121,12 +104,6 @@ public class EnchantmentInit {
 		            if(entry.getKey().getName().contentEquals("enchantment.Glowing")) {
 		            	
 		            	event.player.addPotionEffect(new PotionEffect(Potion.getPotionById(24), 2, entry.getValue()-1, false, false));
-		            	
-		            }
-					
-		            if(entry.getKey().getName().contentEquals("enchantment.Hero of the Village")) {
-		            	
-		            	event.player.addPotionEffect(new PotionEffect(Potion.getPotionById(32), 2, entry.getValue()-1, false, false));
 		            	
 		            }
 					
@@ -203,12 +180,6 @@ public class EnchantmentInit {
 		            if(entry.getKey().getName().contentEquals("enchantment.Bad Luck")) {
 		            	
 		            	event.player.addPotionEffect(new PotionEffect(Potion.getPotionById(27), 2, entry.getValue()-1, false, false));
-		            	
-		            }
-					
-		            if(entry.getKey().getName().contentEquals("enchantment.Bad Omen")) {
-		            	
-		            	event.player.addPotionEffect(new PotionEffect(Potion.getPotionById(31), 2, entry.getValue()-1, false, false));
 		            	
 		            }
 					
@@ -330,12 +301,6 @@ public class EnchantmentInit {
 		            	
 		            }
 					
-		            if(entry.getKey().getName().contentEquals("enchantment.Bad Omen")) {
-		            	
-		            	event.player.addPotionEffect(new PotionEffect(Potion.getPotionById(31), 2, entry.getValue()-1, false, false));
-		            	
-		            }
-					
 		            if(entry.getKey().getName().contentEquals("enchantment.Fire_Resistance")) {
 		            	
 		            	event.player.addPotionEffect(new PotionEffect(Potion.getPotionById(12), 2, entry.getValue()-1, false, false));
@@ -391,12 +356,6 @@ public class EnchantmentInit {
 		            if(entry.getKey().getName().contentEquals("enchantment.Bad Luck")) {
 		            	
 		            	event.player.addPotionEffect(new PotionEffect(Potion.getPotionById(27), 2, entry.getValue()-1, false, false));
-		            	
-		            }
-					
-		            if(entry.getKey().getName().contentEquals("enchantment.Bad Omen")) {
-		            	
-		            	event.player.addPotionEffect(new PotionEffect(Potion.getPotionById(31), 2, entry.getValue()-1, false, false));
 		            	
 		            }
 					
@@ -457,12 +416,6 @@ public class EnchantmentInit {
 		            if(entry.getKey().getName().contentEquals("enchantment.Resistance")) {
 		            	
 		            	event.player.addPotionEffect(new PotionEffect(Potion.getPotionById(11), 2, entry.getValue()-1, false, false));
-		            	
-		            }
-					
-		            if(entry.getKey().getName().contentEquals("enchantment.Slow Falling")) {
-		            	
-		            	event.player.addPotionEffect(new PotionEffect(Potion.getPotionById(28), 2, entry.getValue()-1, false, false));
 		            	
 		            }
 		            
