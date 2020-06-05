@@ -11,7 +11,7 @@ public class EnchantmentNightVision extends Enchantment {
 
 	public EnchantmentNightVision() {
 		
-		super(Rarity.VERY_RARE, EnumEnchantmentType.ARMOR_HEAD, new EntityEquipmentSlot[] {EntityEquipmentSlot.HEAD});
+		super(Rarity.VERY_RARE, EnumEnchantmentType.ARMOR_FEET, new EntityEquipmentSlot[] {EntityEquipmentSlot.FEET});
 		this.setName("Night Vision");
 		this.setRegistryName(new ResourceLocation(Main.MODID + ":night_vision"));
 		
@@ -36,7 +36,7 @@ public class EnchantmentNightVision extends Enchantment {
 	@Override
 	public int getMaxLevel() {
 		
-		return 2;
+		return 1;
 		
 	}
 	
