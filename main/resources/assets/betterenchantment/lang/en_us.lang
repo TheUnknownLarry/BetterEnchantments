@@ -1,0 +1,34 @@
+//Items
+item.empty_enchanted_book.name=Empty Enchanted Book
+
+//Enchantments
+enchantment.Absorption=Absorption
+enchantment.Bad Luck=Bad Luck
+enchantment.Blindness=Blindness
+enchantment.Fire Resistance=Fire Resistance
+enchantment.Glowing=Glowing
+enchantment.Haste=Haste
+enchantment.Health Boost=Health Boost
+enchantment.Hunger=Hunger
+enchantment.Instant Damage=Instant Damage
+enchantment.Instant Health=Instant Health
+enchantment.Invisibility=Invisibility
+enchantment.Jump Boost=Jump Boost
+enchantment.Levitation=Levitation
+enchantment.Luck=Luck
+enchantment.Mining Fatigue=Mining Fatigue
+enchantment.Nausea=Nausea
+enchantment.Night Vision=Night Vision
+enchantment.Poison=Poison
+enchantment.Regeneration=Regeneration
+enchantment.Resistance=Resistance
+enchantment.Saturation=Saturation
+enchantment.Slowness=Slowness
+enchantment.Speed=Speed
+enchantment.Strength=Strength
+enchantment.Water Breathing=Water Breathing
+enchantment.Weakness=Weakness
+enchantment.Wither=Wither
+
+//GUI
+itemGroup.betterenchantmenttab=Better Enchantment
