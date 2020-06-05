@@ -8,3 +8,4 @@ Download:
 -
 * 1.12.2:
   * v1.0: https://github.com/TheUnknownLarry/BetterEnchantment/tree/TheUnknownLarry-BetterEnchantment-1.12.2-v1.0
+  * v1.1: https://github.com/TheUnknownLarry/BetterEnchantment/tree/TheUnknownLarry-BetterEnchantment-1.12.2-v1.1
