@@ -1,10 +1,16 @@
-# BetterEnchantment
-BetterEnchantment is a mod which adds more enchantments and upgrades the old.
-Currently it is only available for 1.12.2 and it only adds every effect as an enchantment.
+# BetterEnchantment 1.12.2 v1.1
+Download the Mod file above or at https://www.curseforge.com/minecraft/mc-mods/betterenchantment/files/2973186
 
-To get a better look at the mod and understand it please go to my Mods Wiki page: https://betterenchantment.fandom.com/wiki/BetterEnchantment_Wiki
-
-Download:
+Changelog
+--
+Added
 -
-* 1.12.2:
-  * v1.0: https://github.com/TheUnknownLarry/BetterEnchantment/tree/TheUnknownLarry-BetterEnchantment-1.12.2-v1.0
+Nothing
+
+Changed
+-
+* Repaired some of the Enchantments
+
+Deleted
+-
+Nothing
