@@ -1,5 +1,5 @@
 # BetterEnchantment 1.12.2 v1.1
-Download the Mod file above or at https://www.curseforge.com/minecraft/mc-mods/betterenchantment/files/2973186
+Download the Mod file above or at https://www.curseforge.com/minecraft/mc-mods/betterenchantments/files/2973186
 
 Changelog
 --
