@@ -14,7 +14,21 @@ out
 .idea
 
 # gradle
-build
+build/_applyBinpatches_2
+build/tmp/jar
+build/_atJar_4
+build/_compileJava_2
+build/_compileJava_3
+build/classes
+build/classpath
+build/createMcpToSrg
+build/createSrgToMcp
+build/downloadMCMeta
+build/downloadMcpConfig
+build/extractSrg
+build/reobfJar
+build/resources
+build/tmp
 .gradle
 
 # other
