@@ -1,0 +1,38 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern":
+	[
+		" b ",
+		"pop",
+		"ono"
+	],
+	
+	"key":
+	{
+		"b":
+		{
+			"item": "betterenchantments:empty_enchanted_book"
+		},
+		
+		"p":
+		{
+			"item": "minecraft:splash_potion"
+		},
+		
+		"o":
+		{
+			"item": "minecraft:obsidian"
+		},
+		
+		"n":
+		{
+			"item": "minecraft:nether_star"
+		}
+	},
+	
+	"result":
+	{
+		"item": "betterenchantments:enchantment_determiner"
+	}
+}

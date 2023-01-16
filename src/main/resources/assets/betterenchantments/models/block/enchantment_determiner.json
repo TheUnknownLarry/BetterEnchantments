@@ -1,0 +1,12 @@
+{
+   "parent": "block/cube",
+   "textures": {
+       "north": "betterenchantments:blocks/enchantment_determiner_front",
+       "east": "betterenchantments:blocks/enchantment_determiner_side",
+       "south": "betterenchantments:blocks/enchantment_determiner_back",
+       "west": "betterenchantments:blocks/enchantment_determiner_side",
+       "up": "betterenchantments:blocks/enchantment_determiner_top",
+       "down": "betterenchantments:blocks/enchantment_determiner_bottom",
+       "particle": "betterenchantments:blocks/enchantment_determiner_front"
+   }
+}

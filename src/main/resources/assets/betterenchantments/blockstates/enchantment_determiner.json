@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "betterenchantments:block/enchantment_determiner" }
+    }
+}
