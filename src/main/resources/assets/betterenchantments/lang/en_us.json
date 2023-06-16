@@ -1,6 +1,7 @@
 {
   "item.betterenchantments.empty_enchanted_book": "Empty Enchanted Book",
   "block.betterenchantments.enchantment_determiner": "Enchantment Determiner",
+  "container.betterenchantments.enchantment_determiner": "Enchantment Determiner",
   "enchantment.betterenchantments.absorption": "Absorption",
   "enchantment.betterenchantments.bad_luck": "Bad Luck",
   "enchantment.betterenchantments.bad_omen": "Bad Omen",
