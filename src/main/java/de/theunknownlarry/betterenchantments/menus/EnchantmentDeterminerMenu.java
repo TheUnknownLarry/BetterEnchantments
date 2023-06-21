@@ -22,7 +22,7 @@ public class EnchantmentDeterminerMenu extends AbstractContainerMenu
 		addSlot(new SlotItemHandler(slots,0,26,35));
 		addSlot(new SlotItemHandler(slots,1,55,35));
 		addSlot(new SlotItemHandler(slots,2,75,35));
-		addSlot(new SlowWithRestriction(slots,3,128,35));
+		addSlot(new SlotWithRestriction(slots,3,128,35));
 
 		for(int k = 0; k < 3; ++k) {
 			for(int i1 = 0; i1 < 9; ++i1) {

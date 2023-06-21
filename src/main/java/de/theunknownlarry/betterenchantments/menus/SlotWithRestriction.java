@@ -7,18 +7,18 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 import org.jetbrains.annotations.NotNull;
 
-public class SlowWithRestriction extends SlotItemHandler
+public class SlotWithRestriction extends SlotItemHandler
 {
 
 	private final Predicate<ItemStack> validator;
 
-	public SlowWithRestriction(final IItemHandler itemHandler, final int index, final int xPosition, final int yPosition, final Predicate<ItemStack> validator)
+	public SlotWithRestriction(final IItemHandler itemHandler, final int index, final int xPosition, final int yPosition, final Predicate<ItemStack> validator)
 	{
 		super(itemHandler, index, xPosition, yPosition);
 		this.validator = validator;
 	}
 
-	public SlowWithRestriction(final IItemHandler itemHandler, final int index, final int xPosition, final int yPosition)
+	public SlotWithRestriction(final IItemHandler itemHandler, final int index, final int xPosition, final int yPosition)
 	{
 		this(itemHandler, index, xPosition, yPosition, itemStack -> false);
 	}
