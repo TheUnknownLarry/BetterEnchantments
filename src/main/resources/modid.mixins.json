@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "de.theunknownlarry.betterenchantments.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "modid.refmap.json",
+  "mixins": [
+    "RecipeBookManagerMixin"
+  ],
+  "client": [
+    "HumanoidArmorLayerMixin",
+    "ItemInHandLayerMixin",
+    "StuckInBodyLayerMixin"
+  ],
+  "minVersion": "0.8"
+}
