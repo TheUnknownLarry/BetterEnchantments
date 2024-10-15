@@ -1,0 +1,11 @@
+{
+  "type": "betterenchantments:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+  ],
+  "item": "betterenchantments:empty_enchanted_book",
+  "prob": 0.01
+}

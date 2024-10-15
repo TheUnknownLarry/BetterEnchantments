@@ -3,6 +3,7 @@ package de.theunknownlarry.betterenchantments;
 import de.theunknownlarry.betterenchantments.init.BlockInit;
 import de.theunknownlarry.betterenchantments.init.EnchantmentInit;
 import de.theunknownlarry.betterenchantments.init.ItemInit;
+import de.theunknownlarry.betterenchantments.init.LootModifiersInit;
 import de.theunknownlarry.betterenchantments.init.MenuInit;
 import de.theunknownlarry.betterenchantments.screens.EnchantmentDeterminerScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -36,6 +37,7 @@ public class Main
         ItemInit.ITEMS.register(bus);
         EnchantmentInit.ENCHANTMENTS.register(bus);
         MenuInit.MENUS.register(bus);
+        LootModifiersInit.LOOT_MODIFIER_SERIALIZERS.register(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
