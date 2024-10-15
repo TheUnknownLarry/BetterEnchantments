@@ -1,0 +1,25 @@
+{
+  "type": "betterenchantments:enchantment_determiner",
+  "base": {
+    "item": "betterenchantments:empty_enchanted_book"
+  },
+  "addition1": {
+    "type": "forge:nbt",
+    "item": "minecraft:lingering_potion",
+    "nbt": {
+      "Potion": "minecraft:luck"
+    }
+  },
+  "result": {
+    "item": "minecraft:enchanted_book",
+    "count": 1,
+    "nbt": {
+      "StoredEnchantments": [
+        {
+          "id": "betterenchantments:luck",
+          "lvl": 1
+        }
+      ]
+    }
+  }
+}

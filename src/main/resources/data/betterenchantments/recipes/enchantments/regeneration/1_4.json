@@ -1,0 +1,25 @@
+{
+  "type": "betterenchantments:enchantment_determiner",
+  "base": {
+    "item": "betterenchantments:empty_enchanted_book"
+  },
+  "addition1": {
+    "type": "forge:nbt",
+    "item": "minecraft:tipped_arrow",
+    "nbt": {
+      "Potion": "minecraft:regeneration"
+    }
+  },
+  "result": {
+    "item": "minecraft:enchanted_book",
+    "count": 1,
+    "nbt": {
+      "StoredEnchantments": [
+        {
+          "id": "betterenchantments:regeneration",
+          "lvl": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "betterenchantments:enchantment_determiner",
+  "base": {
+    "item": "betterenchantments:empty_enchanted_book"
+  },
+  "addition1": {
+    "item": "minecraft:dead_bush"
+  },
+  "result": {
+    "item": "minecraft:enchanted_book",
+    "count": 1,
+    "nbt": {
+      "StoredEnchantments": [
+        {
+          "id": "betterenchantments:bad_luck",
+          "lvl": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "betterenchantments:enchantment_determiner",
+  "base": {
+    "item": "betterenchantments:empty_enchanted_book"
+  },
+  "addition1": {
+    "item": "minecraft:suspicious_stew"
+  },
+  "addition2": {
+    "item": "minecraft:allium"
+  },
+  "result": {
+    "item": "minecraft:enchanted_book",
+    "count": 1,
+    "nbt": {
+      "StoredEnchantments": [
+        {
+          "id": "betterenchantments:fire_resistance",
+          "lvl": 1
+        }
+      ]
+    }
+  }
+}
