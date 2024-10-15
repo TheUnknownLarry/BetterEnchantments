@@ -8,6 +8,7 @@ import de.theunknownlarry.betterenchantments.enchantments.AbsorptionEnchantment;
 import de.theunknownlarry.betterenchantments.enchantments.BadLuckEnchantment;
 import de.theunknownlarry.betterenchantments.enchantments.BadOmenEnchantment;
 import de.theunknownlarry.betterenchantments.enchantments.BlindnessEnchantment;
+import de.theunknownlarry.betterenchantments.enchantments.ConduitPowerEnchantment;
 import de.theunknownlarry.betterenchantments.enchantments.DarknessEnchantment;
 import de.theunknownlarry.betterenchantments.enchantments.DolphinsGraceEnchantment;
 import de.theunknownlarry.betterenchantments.enchantments.FireResistanceEnchantment;
@@ -38,11 +39,14 @@ import de.theunknownlarry.betterenchantments.enchantments.WeaknessEnchantment;
 import de.theunknownlarry.betterenchantments.enchantments.WitherEnchantment;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
 import net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -83,6 +87,7 @@ public class EnchantmentInit {
 	public static final RegistryObject<Enchantment> LUCK = register("luck", LuckEnchantment::new);	//26
 	public static final RegistryObject<Enchantment> BAD_LUCK = register("bad_luck", BadLuckEnchantment::new);	//27
 	public static final RegistryObject<Enchantment> SLOW_FALLING = register("slow_falling", SlowFallingEnchantment::new);	//28
+	public static final RegistryObject<Enchantment> CONDUIT_POWER = register("conduit_power", ConduitPowerEnchantment::new);	//29
 	public static final RegistryObject<Enchantment> DOLPHINS_GRACE = register("dolphins_grace", DolphinsGraceEnchantment::new);	//30
 	public static final RegistryObject<Enchantment> BAD_OMEN = register("bad_omen", BadOmenEnchantment::new);	//31
 	public static final RegistryObject<Enchantment> HERO_OF_THE_VILLAGE = register("hero_of_the_village", HeroOfTheVillageEnchantment::new);	//32
@@ -91,6 +96,14 @@ public class EnchantmentInit {
 	private static RegistryObject<Enchantment> register(String name, Supplier<Enchantment> supplier)
 	{
 		return ENCHANTMENTS.register(name, supplier);
+	}
+
+	@SubscribeEvent
+	public static void onDrink(LivingEntityUseItemEvent.Finish event) {
+		final ItemStack item = event.getItem();
+		if(item.is(Items.MILK_BUCKET)) {
+			applyEffects(event.getEntity());
+		}
 	}
 
 	@SubscribeEvent
@@ -109,7 +122,11 @@ public class EnchantmentInit {
 			return;
 		}
 
-		final LivingEntity entity = event.getEntity();
+		applyEffects(event.getEntity());
+	}
+
+	private static void applyEffects(final LivingEntity entity)
+	{
 		manageEffect(entity, EnchantmentInit.SPEED,1);
 		manageEffect(entity, EnchantmentInit.SLOWNESS,2);
 		manageEffect(entity, EnchantmentInit.HASTE,3);
@@ -138,6 +155,7 @@ public class EnchantmentInit {
 		manageEffect(entity, EnchantmentInit.LUCK,26);
 		manageEffect(entity, EnchantmentInit.BAD_LUCK,27);
 		manageEffect(entity, EnchantmentInit.SLOW_FALLING,28);
+		manageEffect(entity, EnchantmentInit.CONDUIT_POWER,29);
 		manageEffect(entity, EnchantmentInit.DOLPHINS_GRACE,30);
 		manageEffect(entity, EnchantmentInit.BAD_OMEN,31);
 		manageEffect(entity, EnchantmentInit.HERO_OF_THE_VILLAGE,32);
@@ -148,6 +166,10 @@ public class EnchantmentInit {
 	{
 		int level = EnchantmentHelper.getEnchantmentLevel(enchantment.get(), entity);
 		final MobEffect effect = Objects.requireNonNull(MobEffect.byId(id));
+		final MobEffectInstance effectInstance = entity.getEffect(effect);
+		if(effectInstance != null && effectInstance.isVisible()) {
+			return;
+		}
 		entity.removeEffect(effect);
 		if(level > 0) {
 			entity.addEffect(new MobEffectInstance(effect, 1000000, level-1, false, false,true));

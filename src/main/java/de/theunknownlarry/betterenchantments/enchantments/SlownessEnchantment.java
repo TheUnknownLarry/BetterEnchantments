@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class SlownessEnchantment extends EnchantmentParent {
 	public SlownessEnchantment() {
-	super(5, EnchantmentCategory.ARMOR_LEGS, EquipmentSlot.LEGS);
+	super(6, EnchantmentCategory.ARMOR_LEGS, EquipmentSlot.LEGS);
 	}
 
 	protected boolean checkCompatibility(@NotNull Enchantment p_44690_) {
